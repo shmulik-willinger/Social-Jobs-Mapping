@@ -1,0 +1,24 @@
+
+addPerson  --   POST request  --  http://localhost:8080/persons
+{
+     "firstName":"Shmulik",
+     "lastName":"Willinger",
+     "mail":"shmulik83@gmail.com",
+     "cibusNumber":"12345678",
+     "phones":[
+                 {"type":"MOBILE", "phoneNumber":"1234"},
+                 {"type":"HOME"  , "phoneNumber":"5678"}],
+     "addresses":[
+                 {"city":"Tel Aviv", "street":"Pinkas", "streetNumber":"52"},
+                 {"city":"Givat Shmuel", "street":"Yoni Netaniahu", "streetNumber":"32"}],
+     "jobs":[
+                 {"startDate":"2012-04-23", "endDate":"2015-07-23", "companyId":"1", "status":"Disable"},
+                 {"startDate":"2010-01-13", "endDate":"2012-04-30", "companyId":"2", "status":"Enable"}]
+}
+
+
+addCompany  --   POST request  --  http://localhost:8080/companies
+{
+     "name":"Amdocs2",
+      "address":[{"city":"Raanana", "street":"Hapnina", "streetNumber":"2"}]
+}
